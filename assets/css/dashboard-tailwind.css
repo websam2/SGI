@@ -594,6 +594,11 @@ hr {
   opacity: 0.25;
 }
 
+img:hover {
+  filter: brightness(150%);
+  box-shadow: 0 0 10px 5px #888888;
+}
+
 img {
   max-width: none;
 }
