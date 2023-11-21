@@ -594,7 +594,8 @@ hr {
   opacity: 0.25;
 }
 
-img:hover {
+#card:hover {
+  transform: scale(1.03);
   filter: brightness(150%);
   box-shadow: 0 0 10px 5px #888888;
 }
