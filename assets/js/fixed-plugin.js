@@ -4,7 +4,9 @@ var fixedPlugin = document.querySelector("[fixed-plugin]");
 var fixedPluginButton = document.querySelector("[fixed-plugin-button]");
 var fixedPluginButtonNav = document.querySelector("[fixed-plugin-button-nav]");
 var fixedPluginCard = document.querySelector("[fixed-plugin-card]");
-var fixedPluginCloseButton = document.querySelector("[fixed-plugin-close-button]");
+var fixedPluginCloseButton = document.querySelector(
+  "[fixed-plugin-close-button]"
+);
 
 var navbar = document.querySelector("[navbar-main]");
 
@@ -18,8 +20,20 @@ var sidenav_target = "../pages/" + pageName + ".html";
 var whiteBtn = document.querySelector("[transparent-style-btn]");
 var darkBtn = document.querySelector("[white-style-btn]");
 
-var non_active_style = ["bg-none", "bg-transparent", "text-blue-500", "border-blue-500"];
-var active_style = ["bg-gradient-to-tl", "from-blue-500", "to-violet-500", "bg-blue-500", "text-white", "border-transparent"];
+var non_active_style = [
+  "bg-none",
+  "bg-transparent",
+  "text-blue-500",
+  "border-blue-500",
+];
+var active_style = [
+  "bg-gradient-to-tl",
+  "from-blue-500",
+  "to-violet-500",
+  "bg-blue-500",
+  "text-white",
+  "border-transparent",
+];
 
 var white_sidenav_classes = ["bg-white", "shadow-xl"];
 // var white_sidenav_highlighted = ["shadow-xl"];
@@ -29,7 +43,9 @@ var black_sidenav_classes = ["bg-slate-850", "shadow-none"];
 // var black_sidenav_highlighted = ["shadow-none"];
 // var black_sidenav_icons = ["bg-gray-200"];
 
-var sidenav_highlight = document.querySelector("a[href=" + CSS.escape(sidenav_target) + "]");
+var sidenav_highlight = document.querySelector(
+  "a[href=" + CSS.escape(sidenav_target) + "]"
+);
 
 // fixed plugin toggle
 if (pageName != "rtl") {
@@ -49,7 +65,11 @@ if (pageName != "rtl") {
   });
 
   window.addEventListener("click", function (e) {
-    if (!fixedPlugin.contains(e.target) && !fixedPluginButton.contains(e.target) && !fixedPluginButtonNav.contains(e.target)) {
+    if (
+      !fixedPlugin.contains(e.target) &&
+      !fixedPluginButton.contains(e.target) &&
+      !fixedPluginButtonNav.contains(e.target)
+    ) {
       if (fixedPluginCard.classList.contains("right-0")) {
         fixedPluginCloseButton.click();
       }
@@ -72,7 +92,11 @@ if (pageName != "rtl") {
   });
 
   window.addEventListener("click", function (e) {
-    if (!fixedPlugin.contains(e.target) && !fixedPluginButton.contains(e.target) && !fixedPluginButtonNav.contains(e.target)) {
+    if (
+      !fixedPlugin.contains(e.target) &&
+      !fixedPluginButton.contains(e.target) &&
+      !fixedPluginButtonNav.contains(e.target)
+    ) {
       if (fixedPluginCard.classList.contains("left-0")) {
         fixedPluginCloseButton.click();
       }
@@ -91,7 +115,9 @@ function sidebarColor(a) {
 
   var checkedSidenavIconColor = "bg-" + color + "-500/30";
 
-  var sidenavIcon = document.querySelector("a[href=" + CSS.escape(sidenav_target) + "]");
+  var sidenavIcon = document.querySelector(
+    "a[href=" + CSS.escape(sidenav_target) + "]"
+  );
 
   for (var i = 0; i < parent.length; i++) {
     if (parent[i].hasAttribute("active-color")) {
@@ -197,23 +223,24 @@ if (navbar) {
     buttonNavbarFixed.setAttribute("checked", "true");
   }
   const white_elements = navbar.querySelectorAll(".text-white");
-  const white_bg_elements = navbar.querySelectorAll("[sidenav-trigger] i.bg-white");
+  const white_bg_elements = navbar.querySelectorAll(
+    "[sidenav-trigger] i.bg-white"
+  );
   const white_before_elements = navbar.querySelectorAll(".before\\:text-white");
   buttonNavbarFixed.addEventListener("change", function () {
-
     if (this.checked) {
-      white_elements.forEach(element => {
-        element.classList.remove("text-white")
-        element.classList.add("dark:text-white")
+      white_elements.forEach((element) => {
+        element.classList.remove("text-white");
+        element.classList.add("dark:text-white");
       });
-      white_bg_elements.forEach(element => {
-        element.classList.remove("bg-white")
-        element.classList.add("dark:bg-white")
-        element.classList.add("bg-slate-500")
+      white_bg_elements.forEach((element) => {
+        element.classList.remove("bg-white");
+        element.classList.add("dark:bg-white");
+        element.classList.add("bg-slate-500");
       });
-      white_before_elements.forEach(element => {
-        element.classList.add("dark:before:text-white")
-        element.classList.remove("before:text-white")
+      white_before_elements.forEach((element) => {
+        element.classList.add("dark:before:text-white");
+        element.classList.remove("before:text-white");
       });
       navbar.setAttribute("navbar-scroll", "true");
       navbar.classList.add("sticky");
@@ -236,18 +263,18 @@ if (navbar) {
       navbar.classList.remove("bg-[hsla(0,0%,100%,0.8)]");
       navbar.classList.remove("shadow-blur");
       navbar.classList.remove("z-110");
-      white_elements.forEach(element => {
-        element.classList.add("text-white")
-        element.classList.remove("dark:text-white")
+      white_elements.forEach((element) => {
+        element.classList.add("text-white");
+        element.classList.remove("dark:text-white");
       });
-      white_bg_elements.forEach(element => {
-        element.classList.add("bg-white")
-        element.classList.remove("dark:bg-white")
-        element.classList.remove("bg-slate-500")
+      white_bg_elements.forEach((element) => {
+        element.classList.add("bg-white");
+        element.classList.remove("dark:bg-white");
+        element.classList.remove("bg-slate-500");
       });
-      white_before_elements.forEach(element => {
-        element.classList.remove("dark:before:text-white")
-        element.classList.add("before:text-white")
+      white_before_elements.forEach((element) => {
+        element.classList.remove("dark:before:text-white");
+        element.classList.add("before:text-white");
       });
     }
   });

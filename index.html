@@ -70,6 +70,7 @@
             alt="main_logo"
           />
         </a>
+        <p class="font-bold text-center text-sm dark:text-white">SISTEMA DE GESTÃO INTEGRADA</p>
       </div>
 
       <hr
@@ -116,7 +117,7 @@
         </ul>     
       </div>      
         <div class="text-center text-xs dark:text-white m-4" id="datetime"></div>     
-        <p class="text-center text-xs dark:text-white">V2 - Atualizado em: 21/11/2023</p>     
+        <p class="text-center text-xs dark:text-white">V2 - Atualizado em: 08/02/2024</p>     
     </aside>
 
     <!-- end sidenav -->
@@ -132,10 +133,10 @@
         <div
           class="flex items-center justify-between w-full px-4 py-1 mx-auto flex-wrap-inherit"
         >
-          <nav>
+          <!-- <nav>
             <ol
               class="flex flex-wrap mr-12 bg-transparent rounded-lg sm:mr-16"
-            >
+            > -->
             
               <!-- <li class="text-sm leading-normal">
                 <a class="text-white opacity-50" href="javascript:;">Pages</a>
@@ -146,10 +147,10 @@
               >
                 Dashboard
               </li> -->
-            </ol>
+            <!-- </ol>
             <h2 class="mb-0 text-center font-bold text-white capitalize">SGI - SISTEMA DE GESTÃO INTEGRADA</h2>
             
-          </nav>
+          </nav> -->
 
           <div
             class="flex items-center mt-2 grow sm:mt-0 sm:mr-6 md:mr-0 lg:flex lg:basis-auto"
@@ -230,7 +231,7 @@
         <div class="flex flex-wrap justify-between">
           <!-- card1 -->
           <div
-            class="w-full max-w-full px-3 mb-6 sm:w-1/2 sm:flex-none xl:mb-0 xl:w-1/4"
+            class="w-full max-w-full px-3 mb-6 sm:w-1/2 sm:flex-none xl:mb-0"
           >
             <div
               class="relative flex flex-col min-w-0 break-words bg-white shadow-xl dark:bg-slate-850 dark:shadow-dark-xl rounded-2xl bg-clip-border xl:mb-4"
@@ -251,7 +252,7 @@
 
           <!-- card2 -->
           <!-- <div
-            class="w-full max-w-full px-3 mb-6 sm:w-1/2 sm:flex-none xl:mb-0 xl:w-1/4"
+            class="w-full max-w-full px-3 mb-6 sm:w-1/2 sm:flex-none xl:mb-0"
           >
             <div
               class="relative flex flex-col min-w-0 break-words bg-white shadow-xl dark:bg-slate-850 dark:shadow-dark-xl rounded-2xl bg-clip-border"
@@ -268,7 +269,7 @@
 
           <!-- card3 -->
           <!-- <div
-            class="w-full max-w-full px-3 mb-6 sm:w-1/2 sm:flex-none xl:mb-0 xl:w-1/4"
+            class="w-full max-w-full px-3 mb-6 sm:w-1/2 sm:flex-none xl:mb-0"
           >
             <div
               class="relative flex flex-col min-w-0 break-words bg-white shadow-xl dark:bg-slate-850 dark:shadow-dark-xl rounded-2xl bg-clip-border"
@@ -285,15 +286,15 @@
 
            <!-- card4 -->
            <div
-           class="w-full max-w-full px-3 mb-6 sm:w-1/2 sm:flex-none xl:mb-0 xl:w-1/4"
+           class="w-full max-w-full px-3 mb-6 sm:w-1/2 sm:flex-none xl:mb-0"
          >
            <div
              class="relative flex flex-col min-w-0 break-words bg-white shadow-xl dark:bg-slate-850 dark:shadow-dark-xl rounded-2xl bg-clip-border"
            >
              <div class="flex-auto p-4">               
                  <div class="flex-none justify-center items-center max-w-full px-3">
-                   <div>
-                     <img id="card" class="w-full" src="./assets/imagem//ilustracao/OUVIDORIA - SIC.png" alt="OUVIDORIA - SIC" />
+                   <div>                     
+                     <img id="cardOff" class="w-full" src="./assets/imagem//ilustracao/OUVIDORIA - SIC.png" alt="OUVIDORIA - SIC" />
                    </div>
                  </div>               
              </div>
@@ -302,7 +303,7 @@
 
           <!-- card5 -->
           <div
-            class="w-full max-w-full px-3 mb-6 sm:w-1/2 sm:flex-none xl:mb-0 xl:w-1/4"
+            class="w-full max-w-full px-3 mb-6 sm:w-1/2 sm:flex-none xl:mb-0"
           >
             <div
               class="relative flex flex-col min-w-0 break-words bg-white shadow-xl dark:bg-slate-850 dark:shadow-dark-xl rounded-2xl bg-clip-border"
@@ -323,7 +324,7 @@
 
           <!-- card6 -->
           <div
-            class="w-full max-w-full px-3 mb-6 sm:w-1/2 sm:flex-none xl:mb-0 xl:w-1/4"
+            class="w-full max-w-full px-3 mb-6 sm:w-1/2 sm:flex-none xl:mb-0"
           >
             <div
               class="relative flex flex-col min-w-0 break-words bg-white shadow-xl dark:bg-slate-850 dark:shadow-dark-xl rounded-2xl bg-clip-border"
@@ -331,7 +332,7 @@
               <div class="flex-auto p-4">                
                   <div class="flex-none justify-center items-center max-w-full px-3">
                     <div>
-                      <img id="card" class="w-full" src="./assets/imagem/ilustracao/CONTRATOS.png" alt="CONTRATOS" />
+                      <img id="cardOff" class="w-full" src="./assets/imagem/ilustracao/CONTRATOS.png" alt="CONTRATOS" />
                     </div>
                   </div>               
               </div>
@@ -412,7 +413,8 @@
           </p>
 
           <!-- Navbar Fixed -->
-          <div class="flex my-4">
+
+          <div class="flex my-4 invisible">
             <h6 class="mb-0 dark:text-white">Fixar</h6>
             <div class="block pl-0 ml-auto min-h-6">
               <input
