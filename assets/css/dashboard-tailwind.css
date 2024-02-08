@@ -604,6 +604,7 @@ hr {
   transform: scale(1.03);
   filter: brightness(50%);
   box-shadow: 0 0 10px 5px #888888;
+  opacity: 0.6;
 }
 
 img {
