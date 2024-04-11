@@ -1344,6 +1344,10 @@ h6 {
   width: 1.5rem;
 }
 
+.w-40 {
+  width: 15rem;
+}
+
 .w-90 {
   width: 22.5rem;
 }
