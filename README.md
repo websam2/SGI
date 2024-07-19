@@ -27,8 +27,10 @@ git init
 ### Alterar os cards
 1. Navegue até o diretório do projeto clonado e acesse a pasta assets/json/ 
 2. Abra o arquivo `data.json` com editor de texto ou VSCode.
-3. Faça as alterações necessárias nos cards.
+3. Ao adicionar um novo card, coloque a imagem na pasta `/assets/imagem/ilustracao/`. Precisa manter os mesmos tamanhos na largura e altura.
+
 4. Certifique-se de seguir a mesma estrutura do JSON e com IDs diferentes para cada card.
+ 
 5. Salve as alterações do arquivo `data.json`.
 
 ### Fazendo Commit do Código via CMD
