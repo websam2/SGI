@@ -10,33 +10,34 @@
     />
     <link rel="icon" type="image/png" href="./assets/imagem/logo/logo-SGI.png" />
     <title>SGI - Sistema de Gestão Integrada</title>
-    <!--     Fonts and icons     -->
+
+    <!-- Fonts -->
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700"
       rel="stylesheet"
     />
-    <!-- Font Awesome Icons -->
+    <!-- Icons -->
     <script
       src="https://kit.fontawesome.com/42d5adcbca.js"
       crossorigin="anonymous"
     ></script>
-
-      <!-- Data and time -->
+    <!-- Data and time -->
     <script src="./assets/js/data-time.js"></script>
-        
-    <!-- Main Styling -->
+    <!-- Cards -->  
+    <script src="./assets/js/cards.js"></script>
+    <!-- Styling -->
     <link
       href="./assets/css/dashboard-tailwind.css"
       rel="stylesheet"
     />
-  </head>
 
+  </head>
   <body
     class="m-0 font-sans text-base antialiased font-normal dark:bg-slate-900 leading-default bg-gray-50 text-slate-500"
   >
     <div class="absolute w-full bg-blue-500 dark:hidden min-h-75"></div>
 
-    <!-- sidenav  -->
+    <!-- sidenav left  -->
     <aside
       class="fixed inset-y-0 flex-wrap items-center justify-between block w-full p-0 my-4 overflow-y-auto antialiased transition-transform duration-200 -translate-x-full bg-white border-0 shadow-xl dark:shadow-none dark:bg-slate-850 max-w-64 ease-nav-brand z-990 xl:ml-6 rounded-2xl xl:left-0 xl:translate-x-0"
       aria-expanded="false"
@@ -115,11 +116,10 @@
         <div class="text-center text-xs dark:text-white m-4" id="datetime"></div>         
     </aside>
 
-    <!-- end sidenav -->
     <main
       class="relative h-full max-h-screen transition-all duration-200 ease-in-out xl:ml-68 rounded-xl"
     >
-      <!-- Navbar -->
+      <!-- Navbar top -->
       <nav
         class="relative flex flex-wrap items-center justify-between px-0 py-2 mx-6 transition-all ease-in shadow-none duration-250 rounded-2xl lg:flex-nowrap lg:justify-start"
         navbar-main
@@ -128,25 +128,6 @@
         <div
           class="flex items-center justify-between w-full px-4 py-1 mx-auto flex-wrap-inherit"
         >
-          <!-- <nav>
-            <ol
-              class="flex flex-wrap mr-12 bg-transparent rounded-lg sm:mr-16"
-            > -->
-            
-              <!-- <li class="text-sm leading-normal">
-                <a class="text-white opacity-50" href="javascript:;">Pages</a>
-              </li>
-              <li
-                class="text-sm pl-2 capitalize leading-normal text-white before:float-left before:pr-2 before:text-white before:content-['/']"
-                aria-current="page"
-              >
-                Dashboard
-              </li> -->
-            <!-- </ol>
-            <h2 class="mb-0 text-center font-bold text-white capitalize">SGI - SISTEMA DE GESTÃO INTEGRADA</h2>
-            
-          </nav> -->
-
           <div
             class="flex items-center mt-2 grow sm:mt-0 sm:mr-6 md:mr-0 lg:flex lg:basis-auto"
           >
@@ -177,10 +158,10 @@
                   href="javascript:;"
                   class="p-0 text-sm text-white transition-all ease-nav-brand"
                 >
-                  <i
+                  <!-- <i
                     fixed-plugin-button-nav
                     class="cursor-pointer fa fa-cog"
-                  ></i>
+                  ></i> -->
                 </a>
               </li>
             </ul>
@@ -188,153 +169,23 @@
         </div>
       </nav>
 
-      <!-- end Navbar -->
-
       <!-- cards -->
-      <div class="w-full px-6 mx-auto">
-        <!-- row 1 -->
-        <div class="flex flex-wrap justify-between">
-
-          <!-- card1 -->
-          <div
-            class="w-full max-w-full px-3 mb-6 sm:w-1/2 sm:flex-none xl:mb-0 xl:w-1/4"
-          >
-
-          <div
-              class="relative flex flex-col min-w-0 break-words bg-white shadow-xl dark:bg-slate-850 dark:shadow-dark-xl rounded-2xl bg-clip-border xl:mb-4"
-            >
-              <div class="flex-auto p-4">                
-                  <div class="flex-none justify-center items-center max-w-full px-3">
-                    <div>
-                      <a 
-                      href="https://app.powerbi.com/view?r=eyJrIjoiMWNmMmJmZjUtZDlkOC00ZWZmLTk1N2EtMTQ5M2I3MDg3NWJjIiwidCI6IjNhNzhiMGNkLTdjOGUtNDkyOS04M2Q1LTE5MGE2Y2MwMTM2NSJ9"
-                      target="_blank" rel="noopener noreferrer"> 
-                      <img id="card" class="w-full" src="./assets/imagem/ilustracao/DEMANDAS SEI.png" alt="DEMANDAS SEI">
-                      </a>
-                    </div>                  
-                </div>
-              </div>
-            </div>           
+        <div class="w-full px-6 mx-auto">
+        <div id="cards-container" class="flex flex-wrap justify-between">
+          <!-- Os Cards serão adicionados aqui -->
           </div>
-
-          <!-- card2 -->
-          <div
-            class="w-full max-w-full px-3 mb-6 sm:w-1/2 sm:flex-none xl:mb-0 xl:w-1/4"
-          >
-          <div
-          class="relative flex flex-col min-w-0 break-words bg-white shadow-xl dark:bg-slate-850 dark:shadow-dark-xl rounded-2xl bg-clip-border"
-        >
-          <div class="flex-auto p-4">                
-              <div class="flex-none justify-center items-center max-w-full px-3">
-                <div>
-                  <a 
-                  href="https://app.powerbi.com/view?r=eyJrIjoiNDBkYTA2YzUtODlhZC00NGY2LTkyMGUtYzY0YTI3ODMzNzJhIiwidCI6IjNhNzhiMGNkLTdjOGUtNDkyOS04M2Q1LTE5MGE2Y2MwMTM2NSJ9"
-                  target="_blank" rel="noopener noreferrer">
-                  <img id="card" class="w-full" src="./assets/imagem/ilustracao/REPRESENTAÇÃO INSTITUCIONAL.png" alt="REPRESENTAÇÃO INSTITUCIONAL" /> 
-                </a>
-                </div>
-              </div>
-            </div>              
-        </div>         
-      </div>
-
-          <!-- card3 -->
-           <div
-           class="w-full max-w-full px-3 mb-6 sm:w-1/2 sm:flex-none xl:mb-0 xl:w-1/4"
-         >
-         <div
-          class="relative flex flex-col min-w-0 break-words bg-white shadow-xl dark:bg-slate-850 dark:shadow-dark-xl rounded-2xl bg-clip-border"
-        >
-          <div class="flex-auto p-4">                
-              <div class="flex-none justify-center items-center max-w-full px-3">
-                <div>                  
-                  <a 
-                  href="https://app.powerbi.com/view?r=eyJrIjoiN2EwZTYyYmEtNDQ3Ni00ZDE1LTg1OGItNjEzOWEyYzM5YzY4IiwidCI6IjNhNzhiMGNkLTdjOGUtNDkyOS04M2Q1LTE5MGE2Y2MwMTM2NSJ9"
-                  target="_blank" rel="noopener noreferrer">
-                  <img id="card" class="w-full" src="./assets/imagem/ilustracao/RELATÓRIO DIRETORIAS DE BACIAS.png" alt="RELATÓRIO DIRETORIAS DE BACIAS" /> 
-                </a>
-                </div>
-              </div>               
-          </div>
-        </div>            
-      </div>
-
-        <!-- card4 -->
-        <div
-        class="w-full max-w-full px-3 mb-6 sm:w-1/2 sm:flex-none xl:mb-0 xl:w-1/4"
-      >
-      <div
-      class="relative flex flex-col min-w-0 break-words bg-white shadow-xl dark:bg-slate-850 dark:shadow-dark-xl rounded-2xl bg-clip-border"
-      >
-      <div class="flex-auto p-4">               
-          <div class="flex-none justify-center items-center max-w-full px-3">
-            <div>
-              <a 
-              href="https://app.powerbi.com/view?r=eyJrIjoiNTdhZmQ5NWYtMDQ3MS00NjA0LWIxYzktNWQ0ZDYxMmUxMzVlIiwidCI6IjNhNzhiMGNkLTdjOGUtNDkyOS04M2Q1LTE5MGE2Y2MwMTM2NSJ9"
-              target="_blank" rel="noopener noreferrer">
-              <img id="card" class="w-full" src="./assets/imagem/ilustracao/GESTÃO DE CONTRATOS.png" alt="GESTÃO DE CONTRATOS" /> 
-            </a>                     
-            </div>
-          </div>               
-      </div>
-    </div>           
-  </div>
-
-          <!-- card5 -->
-          <div
-            class="w-full max-w-full px-3 mb-6 sm:w-1/2 sm:flex-none xl:mb-0 xl:w-1/4"
-          >
-          <div
-          class="relative flex flex-col min-w-0 break-words bg-white shadow-xl dark:bg-slate-850 dark:shadow-dark-xl rounded-2xl bg-clip-border"
-        >
-          <div class="flex-auto p-4">               
-              <div class="flex-none justify-center items-center max-w-full px-3">
-                <div>
-                  <a
-                  href="https://app.powerbi.com/view?r=eyJrIjoiOTk1Yzk5OTUtYThlMi00YzA3LWE3ZTMtMGExMDA1NjZmZTE3IiwidCI6IjNhNzhiMGNkLTdjOGUtNDkyOS04M2Q1LTE5MGE2Y2MwMTM2NSJ9" 
-                  target="_blank" rel="noopener noreferrer">
-                  <img id="card" class="w-full" src="./assets/imagem/ilustracao/CONTROLE PLANO DE AÇÃO.png" alt="CONTROLE PLANO DE AÇÃO" /> 
-                </a>                     
-                </div>
-              </div>               
-          </div>
-        </div>           
-       </div>
-
-       <!-- card6 -->
-       <div
-       class="w-full max-w-full px-3 mb-6 sm:w-1/2 sm:flex-none xl:mb-0 xl:w-1/4"
-     >
-        <div
-        class="relative flex flex-col min-w-0 break-words bg-white shadow-xl dark:bg-slate-850 dark:shadow-dark-xl rounded-2xl bg-clip-border"
-      >
-        <div class="flex-auto p-4">               
-            <div class="flex-none justify-center items-center max-w-full px-3">
-              <div>
-                <a 
-                href="https://app.powerbi.com/view?r=eyJrIjoiOGRmYzlkMmMtMzE1Yi00ZmQwLTlhY2EtNzg1ZDZjNWViMjEzIiwidCI6IjNhNzhiMGNkLTdjOGUtNDkyOS04M2Q1LTE5MGE2Y2MwMTM2NSJ9" 
-                target="_blank" rel="noopener noreferrer">
-                <img id="card" class="w-full" src="./assets/imagem/ilustracao/INDICADORES DE DESEMPENHO.png" alt="INDICADORES DE DESEMPENHO" /> 
-              </a>                     
-              </div>
-            </div>               
         </div>
-      </div>           
-  </div>
-
-
-</div>
-
-      <!-- end cards -->
+      </div>
     </main>
-    <div fixed-plugin>
+
+      <!-- popup -->
+    <!-- <div fixed-plugin>
       <a
         fixed-plugin-button
         class="fixed px-4 py-2 text-xl bg-white shadow-lg cursor-pointer bottom-8 right-8 z-990 rounded-circle text-slate-700"
       >
         <i class="py-2 pointer-events-none fa fa-cog"> </i>
       </a>
-      <!-- -right-90 in loc de 0-->
       <div
         fixed-plugin-card
         class="z-sticky backdrop-blur-2xl backdrop-saturate-200 dark:bg-slate-850/80 shadow-3xl w-90 ease -right-90 fixed top-0 left-auto flex h-full min-w-0 flex-col break-words rounded-none border-0 bg-white/80 bg-clip-border px-2.5 duration-200"
@@ -355,14 +206,11 @@
             </button>
           </div>
 
-          <!-- End Toggle Button -->
         </div>
         <hr
           class="h-px mx-0 my-1 bg-transparent bg-gradient-to-r from-transparent via-black/40 to-transparent dark:bg-gradient-to-r dark:from-transparent dark:via-white dark:to-transparent"
         />
         <div class="flex-auto p-4 pt-0 overflow-auto sm:pt-4">
-         
-          <!-- Sidenav Type -->
           <div class="mt-4">
             <h6 class="mb-0 dark:text-white">Tipo de navegação lateral</h6>
             <p class="text-sm leading-normal dark:text-white dark:opacity-80">
@@ -391,9 +239,6 @@
           >
           Você pode alterar o tipo de navegação lateral apenas no modo de exibição da área de trabalho.
           </p>
-
-          <!-- Navbar Fixed -->
-
           <div class="flex my-4 invisible">
             <h6 class="mb-0 dark:text-white">Fixar</h6>
             <div class="block pl-0 ml-auto min-h-6">
@@ -404,7 +249,6 @@
               />
             </div>
           </div>
-
           <hr
             class="h-px my-6 bg-transparent bg-gradient-to-r from-transparent via-black/40 to-transparent dark:bg-gradient-to-r dark:from-transparent dark:via-white dark:to-transparent"
           />
@@ -420,11 +264,7 @@
           </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
-  </body>
-
-  <!-- main script file  -->
-  <script src="./assets/js/dashboard-tailwind.js" async></script>
-
+  </body> 
 </html>

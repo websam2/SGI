@@ -17,10 +17,10 @@
 }
 
 /*
-1. Use a consistent sensible line-height in all browsers.
-2. Prevent adjustments of font size after orientation changes in iOS.
-3. Use a more readable tab size.
-4. Use the user's configured `sans` font-family by default.
+1. Altura de linha sensível consistente em todos os navegadores.
+2. Evite ajustes de tamanho de fonte após mudanças de orientação no iOS.
+3. Use um tamanho de guia mais legível.
+4. Use a família de fontes 'sans' configurada pelo usuário por padrão.
 */
 
 html {
@@ -38,8 +38,8 @@ html {
 }
 
 /*
-1. Remove the margin in all browsers.
-2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+1. Remove a margem em todos os navegadores.
+2. Herdar a altura da linha de 'html' para que os usuários possam defini-los como uma classe diretamente no elemento 'html'.
 */
 
 body {
@@ -50,9 +50,9 @@ body {
 }
 
 /*
-1. Add the correct height in Firefox.
-2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
-3. Ensure horizontal rules are visible by default.
+1. Adiciona a altura correta no Firefox.
+2. Corrije a herança da cor da borda no Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Certifica de que as regras horizontais estejam visíveis por padrão.
 */
 
 hr {
@@ -65,7 +65,7 @@ hr {
 }
 
 /*
-Add the correct text decoration in Chrome, Edge, and Safari.
+Decoração de texto no Chrome, Edge, and Safari.
 */
 
 abbr:where([title]) {
@@ -74,7 +74,7 @@ abbr:where([title]) {
 }
 
 /*
-Remove the default font size and weight for headings.
+Remove o tamanho e a espessura da fonte padrão dos títulos.
 */
 
 h1,
@@ -88,7 +88,7 @@ h6 {
 }
 
 /*
-Reset links to optimize for opt-in styling instead of opt-out.
+Redefina os links para otimizar o estilo de aceitação em vez de desativação.
 */
 
 a {
@@ -97,7 +97,7 @@ a {
 }
 
 /*
-Add the correct font weight in Edge and Safari.
+Adicione a espessura de fonte correta no Edge e no Safari.
 */
 
 b,
@@ -106,8 +106,8 @@ strong {
 }
 
 /*
-1. Use the user's configured `mono` font family by default.
-2. Correct the odd `em` font sizing in all browsers.
+1. Use a família de fonte 'mono' configurada pelo usuário por padrão.
+2. Corrige o tamanho estranho da fonte 'em' em todos os navegadores.
 */
 
 code,
@@ -122,7 +122,7 @@ pre {
 }
 
 /*
-Add the correct font size in all browsers.
+Adiciona o tamanho correto da fonte em todos os navegadores.
 */
 
 small {
@@ -130,7 +130,7 @@ small {
 }
 
 /*
-Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+Impede que os elementos 'sub' e 'sup' afetem a altura da linha em todos os navegadores.
 */
 
 sub,
@@ -150,9 +150,9 @@ sup {
 }
 
 /*
-1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
-2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
-3. Remove gaps between table borders by default.
+1. Remove a indentação do texto do conteúdo da tabela no Chrome e Safari. 
+2. Corrige a herança da cor da borda da tabela em todos os Chrome e Safari. 
+3. Remove espaços entre as bordas da tabela por padrão.
 */
 
 table {
@@ -165,9 +165,9 @@ table {
 }
 
 /*
-1. Change the font styles in all browsers.
-2. Remove the margin in Firefox and Safari.
-3. Remove default padding in all browsers.
+1. Muda os estilos de fonte em todos os navegadores.
+2. Remove a margem no Firefox e Safari.
+3. Remove o preenchimento padrão em todos os navegadores
 */
 
 button,
@@ -192,7 +192,7 @@ textarea {
 }
 
 /*
-Remove the inheritance of text transform in Edge and Firefox.
+Remove a herança da transformação de texto no Edge e Firefox.
 */
 
 button,
@@ -201,8 +201,8 @@ select {
 }
 
 /*
-1. Correct the inability to style clickable types in iOS and Safari.
-2. Remove default button styles.
+1. Corrige a incapacidade de estilizar tipos clicáveis no iOS e Safari.
+2. Remove os estilos de botão padrão.
 */
 
 button,
@@ -218,7 +218,7 @@ button,
 }
 
 /*
-Use the modern Firefox focus style for all focusable elements.
+Usa o estilo de foco moderno do Firefox para todos os elementos focáveis.
 */
 
 :-moz-focusring {
@@ -226,7 +226,7 @@ Use the modern Firefox focus style for all focusable elements.
 }
 
 /*
-Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+Remove os estilos adicionais `:invalid` no Firefox.
 */
 
 :-moz-ui-invalid {
@@ -234,7 +234,7 @@ Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/
 }
 
 /*
-Add the correct vertical alignment in Chrome and Firefox.
+Adiciona o alinhamento vertical correto no Chrome e Firefox.
 */
 
 progress {
@@ -242,7 +242,7 @@ progress {
 }
 
 /*
-Correct the cursor style of increment and decrement buttons in Safari.
+Corrige o estilo do cursor dos botões de incremento e decremento no Safari.
 */
 
 ::-webkit-inner-spin-button,
@@ -251,8 +251,8 @@ Correct the cursor style of increment and decrement buttons in Safari.
 }
 
 /*
-1. Correct the odd appearance in Chrome and Safari.
-2. Correct the outline style in Safari.
+1. Corrige a aparência estranha no Chrome e Safari.
+2. Corrige o estilo do contorno no Safari.
 */
 
 [type="search"] {
@@ -263,7 +263,7 @@ Correct the cursor style of increment and decrement buttons in Safari.
 }
 
 /*
-Remove the inner padding in Chrome and Safari on macOS.
+Remove o preenchimento interno no Chrome e Safari no macOS.
 */
 
 ::-webkit-search-decoration {
@@ -271,8 +271,8 @@ Remove the inner padding in Chrome and Safari on macOS.
 }
 
 /*
-1. Correct the inability to style clickable types in iOS and Safari.
-2. Change font properties to `inherit` in Safari.
+1. Corrige a incapacidade de estilizar tipos clicáveis no iOS e Safari.
+2. Muda as propriedades da fonte para `inherit` no Safari.
 */
 
 ::-webkit-file-upload-button {
@@ -283,7 +283,7 @@ Remove the inner padding in Chrome and Safari on macOS.
 }
 
 /*
-Add the correct display in Chrome and Safari.
+Adiciona a exibição correta no Chrome e Safari.
 */
 
 summary {
@@ -291,7 +291,7 @@ summary {
 }
 
 /*
-Removes the default spacing and border for appropriate elements.
+Remove o espaçamento e a borda padrão para elementos apropriados.
 */
 
 blockquote,
@@ -328,7 +328,7 @@ menu {
 }
 
 /*
-Prevent resizing textareas horizontally by default.
+Impede o redimensionamento horizontal das áreas de texto por padrão.
 */
 
 textarea {
@@ -336,8 +336,8 @@ textarea {
 }
 
 /*
-1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
-2. Set the default placeholder color to the user's configured gray 400 color.
+1. Redefine a opacidade padrão do placeholder no Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Define a cor padrão do placeholder para a cor cinza 400 configurada pelo usuário.
 */
 
 input::-moz-placeholder,
@@ -357,7 +357,7 @@ textarea::placeholder {
 }
 
 /*
-Set the default cursor for buttons.
+Define o cursor padrão para botões.
 */
 
 button,
@@ -366,7 +366,7 @@ button,
 }
 
 /*
-Make sure disabled buttons don't get the pointer cursor.
+Certifica-se de que os botões desabilitados não recebam o cursor de ponteiro.
 */
 
 :disabled {
@@ -374,9 +374,9 @@ Make sure disabled buttons don't get the pointer cursor.
 }
 
 /*
-1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
-2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
-   This can trigger a poorly considered lint error in some tools but is included by design.
+1. Faz com que os elementos substituídos tenham `display: block` por padrão. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Adiciona `vertical-align: middle` para alinhar elementos substituídos de forma mais sensata por padrão. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   Isso pode acionar um erro de lint mal considerado em algumas ferramentas, mas é incluído por design.
 */
 
 img,
@@ -394,7 +394,7 @@ object {
 }
 
 /*
-Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+Restringe imagens e vídeos à largura do pai e preserva sua proporção intrínseca. (https://github.com/mozdevs/cssremedy/issues/14)
 */
 
 img,
