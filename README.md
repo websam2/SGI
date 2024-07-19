@@ -1,4 +1,6 @@
 # SGI - Sistema de Gestão de Informações
+[https://sgi-websam2s-projects.vercel.app/](https://sgi-websam2s-projects.vercel.app/)
+![alt text](./assets/imagem/painel.png)
 
 ## Introdução
 Este tutorial irá guiá-lo através do processo de fazer clone e commit para a hospedagem que está vinculado a esse repositório.
